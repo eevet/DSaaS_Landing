@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <section class="container">
+        <div class="content">
+            <img src="ee-logo-white-text.png">
+        </div>
+    </section>
+    
+    <section class="container">
+        <div class="content">
+            <p>scroll down</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <h1>EXPERTISE</h1>
+            <h1>ON-DEMAND</h1>
+            <h3>SAAS IT Management / Data Science as a Service</h3>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <h2>87% OF DATA SCIENCE PROJECTS NEVER MAKE IT TO PRODUCTION DUE TO A LACK OF EXPERTISE
+            </h2>
+            <p>~ Venture Beat</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <h2>Hire Our Experts</h2>
+            <h3>Data Engineers / Software Engineers / UX/UI Engineers / Product Owners / Market Analyst / Finance Analyst</h3>
+            <div class="button">
+                <button>Request a Consult</button>
+            </div>
+            <div class="pricing-table">
+                <div class="grid">
+                    <div class="card basic">
+                        <div class="price">
+                            <b>IT Management</b>
+                        </div>
+                        <div class="features">
+                            <div><p2>4 hrs / Month</p2></div>
+                            <div><p2>access to entire Team</p2></div>
+                            <div><p2>best for small businesses</p2></div>
+                        </div>
+                    </div>
+
+                    <div class="card pro">
+                        <div class="price">
+                            <b>Individual Expert</b>
+                        </div>
+                        <div class="features">
+                            <div><p2>100 hr block of time</p2></div>
+                            <div><p2>access to individual expert</p2></div>
+                            <div><p2>best for SMB organizations</p2></div>
+                        </div>
+                    </div>
+
+                    <div class="card team">
+                        <div class="price">
+                            <b>DSaaS Team</b>
+                        </div>
+                        <div class="features">
+                            <div><p2>160 hr block of time</p2></div>
+                            <div><p2>access to entire team</p2></div>
+                            <div><p2>perfect for enterprise companies</p2></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <h2>APIs / APPs / WEBAPPs / ETL Platforms / ML Models / GIS Platforms
+            </h2>
+            <p>We have a 100% delivery rate for the products above and a performance history of stabilizing platforms for customers, employees, and alogirthms</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <h2>Let us be the tip of the Spear</h2>
+            <h3>for all your IT Management & Data Science Needs</h3>
+            <p>Avoid HR & Outsourcing pitfals</p>
+            <p>Stabilize SaaS IT Infrastructure</p>
+            <p>Accelerate Product Development</p>
+            <!-- <p>Integrating technical solutions for business operations requires a skilled cross-functional approach that verifies critical needs for customers, employees, and algorithms. Let EEVET provide the framework to successfully deploy your solution. to accelerate product development. and diminish hr costs</p> -->
+        </div>
+    </section>
+
+    <div id="set-height"></div>
+
+    <video id="v0" tabindex="0", autobuffer preload>
+        <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' src="final.mp4"></source>
+    </video>
+    <script src="sticky.js"></script>
+    <script>
+
+        enterView({
+            selector: 'section',
+            enter: function(el) {
+                el.classList.add('entered');
+            }
+        })
+    
+        var frameNumber = 0, // start video at frame 0
+        // lower numbers = faster playback
+        playbackConst = 150, 
+        // get page height from video duration
+        setHeight = document.getElementById("set-height"), 
+        // select video element         
+        vid = document.getElementById('v0'); 
+        // var vid = $('#v0')[0]; // jquery option
+
+    // dynamically set the page height according to video length
+    vid.addEventListener('loadedmetadata', function() {
+    setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
+    });
+
+
+    // Use requestAnimationFrame for smooth playback
+    function scrollPlay(){  
+    var frameNumber  = window.pageYOffset/playbackConst;
+    vid.currentTime  = frameNumber;
+    window.requestAnimationFrame(scrollPlay);
+    }
+
+    window.requestAnimationFrame(scrollPlay);
+    
+    </script>
+</body>
+</html>
