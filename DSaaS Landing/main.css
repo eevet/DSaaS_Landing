@@ -167,7 +167,7 @@ section:nth-of-type(2) {
   height: 150px;
   justify-content: flex-start;
   text-align: center;
-  padding-top: 50em;
+  padding-top: 40em;
   border: 2px #000;
 }
 section:nth-of-type(3) {
