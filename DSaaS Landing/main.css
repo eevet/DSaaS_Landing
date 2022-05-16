@@ -1,10 +1,15 @@
 body {
   background-color: rgb(19, 214, 228);
-  padding: 3em;
+}
+
+@media (min-width:480px) {
+  body {
+    padding: 3em;
+  }
 }
 
 b {
-  font-size: 2em;
+  font-size: 5vw;
   font-family: 'Bebas Neue', cursive;
   color: #fff;
   margin: 0;
@@ -12,42 +17,42 @@ b {
 }
 
 h1 {
-  font-size: 9em;
+  font-size: 9vw;
   font-family: 'Bebas Neue', cursive;
   color: #fff;
   margin: 0;
   text-shadow: 1px 1px 2px #000;
 }
 h2 {
-  font-size: 3em;
+  font-size: 6vw;
   font-family: 'Open Sans', sans-serif;
   color: #fff;
   margin: 0;
   text-shadow: 1px 1px 2px #000;
 }
 h3 {
-  font-size: 2em;
+  font-size: 5vw;
   font-family: 'Bebas Neue', cursive;
   color: #fff;
   margin: 0;
   text-shadow: 1px 1px 2px #000;
 }
 h4 {
-  font-size: 6em;
+  font-size: 6vw;
   font-family: 'Bebas Neue', cursive;
   color: #fff;
   margin: 0;
   text-shadow: 1px 1px 2px #000;
 }
 p {
-  font-size: 2em;
+  font-size: 5vw;
   font-family: 'Bebas Neue', cursive;
   color: #fff;
   text-shadow: 1px 1px 1px #000;
 }
 
 p2 {
-  font-size: 1.5em;
+  font-size: 1.5vw;
   font-family: 'Bebas Neue', cursive;
   color: #fff;
   text-shadow: 1px 1px 1px #000;
@@ -97,7 +102,7 @@ section {
 
 @media (max-width: 767px) {
   body {
-    width: 1200px;
+    /* width: 1200px; */
   }
 }
 
@@ -111,7 +116,7 @@ section {
 }
 
 .pricing-table .grid {
-  display: inline-flex;
+  /* display: inline-flex; */
   gap: 20px 0px;
   padding: 20px;
 }
