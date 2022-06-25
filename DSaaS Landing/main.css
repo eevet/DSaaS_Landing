@@ -116,7 +116,6 @@ section {
 }
 
 .pricing-table .grid {
-  display: inline-flex;
   gap: 20px 0px;
   padding: 20px;
 }
