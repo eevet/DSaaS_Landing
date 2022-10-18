@@ -61,6 +61,9 @@
     scroll-snap-align: start;
     font-size: 9vh;
     font-family: 'Montserrat', sans-serif;
+    flex-direction: column;
+    gap: 2em;
+    position: relative;
 }
 
 .four {
@@ -123,6 +126,8 @@
     scroll-snap-align: start;
     font-size: 5vh;
     font-family: 'Open Sans', sans-serif;
+    flex-direction: column;
+    gap: 1.5em;
 }
 
 .askText {
@@ -209,5 +214,67 @@
 
 .codesText {
     color: #fff; 
-    writing-mode: vertical-lr;
+    /* writing-mode: vertical-lr; */
+}
+
+.down-arrow{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.down-arrow span {
+    display: block;
+    width: 2vw;
+    height: 4vh;
+    border-bottom: 20px solid #fff;
+    border-right: 20px solid #fff;
+    transform: rotate(45deg);
+    margin: 10px;
+    animation: scroll-down 2s infinite;
+}
+
+.side-arrow{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.side-arrow span {
+    display: block;
+    width: 2vw;
+    height: 4vh;
+    border-top: 20px solid #fff;
+    border-right: 20px solid #fff;
+    transform: rotate(45deg);
+    margin: 10px;
+    animation: scroll-side 2s infinite
+}
+
+@keyframes scroll-side {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, 20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(45deg) translate(20px, -20px);
+    }
+}
+
+@keyframes scroll-down {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
 }
