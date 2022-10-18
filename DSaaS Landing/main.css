@@ -36,7 +36,7 @@
   justify-content: center;
   align-items: center;
   scroll-snap-align: start;
-  font-size: 14vh;
+  font-size: 12vh;
   font-family: 'Open Sans', sans-serif;
   flex: none;
 }
@@ -74,7 +74,7 @@
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
-    font-size: 11vw;
+    font-size: 10vw;
     line-height: 30vh;
     width: 200vh;
     font-family: 'Montserrat', sans-serif;
@@ -88,7 +88,7 @@
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
-    font-size: 8vh;
+    font-size: 7vh;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -136,6 +136,11 @@
     justify-content: center;
     align-items: center;
     color:#333;
+    margin: 50px;
+}
+
+.justText {
+    margin: 50px;
 }
 
 .start {
@@ -145,20 +150,22 @@
     width: 100vw;
     color: #fff;
     list-style: none;
-    line-height: 15vh;
+    line-height: 14vh;
     font-family: 'Open Sans', sans-serif;
 }
 
 .victory {
-    margin: 20px 10px;
-    align-items: center;
     font-size: 4vh;
     color: #333;
     list-style: none;
     display: flex;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
+    width: 200vw;
+    gap: 1em;
+    margin: 100px;
+}
+
+.victory > * {
+    flex-basis: 100%;
 }
 
 .products {
@@ -183,6 +190,12 @@
     width: 100vw;
     justify-content: center;
     align-items: center;
+    display: flex;
+    gap: 1em;
+}
+
+.codes > * {
+    flex-basis: 100%;
 }
 
 .probText {
@@ -202,9 +215,17 @@
 }
 
 .saluteText {
-    overflow: hidden;
+    cursor: default;
+    color: #000;
+    -webkit-text-stroke: 0.1vw #fff;
+    text-transform: uppercase;
+    margin: 100px;
+}
+
+.friendText {
     cursor: default;
     color: #fff;
+    text-transform: uppercase;
 }
 
 .productText {
